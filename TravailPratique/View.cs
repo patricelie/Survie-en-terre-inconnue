@@ -77,7 +77,7 @@ namespace TravailPratique
             Console.WriteLine($"Herbe:{Game.countPrairie}");
             Console.WriteLine($"Sable:{Game.countDesert}");
             Console.WriteLine("--------Outils---------------");
-            Console.WriteLine($"Feu:{Game.countFeu}");
+             Console.WriteLine($"Feu:{Game.countFeu}");
             Console.WriteLine($"Hache:{Game.countHache}");
             Console.WriteLine($"Vitre:{Game.countVitre}");
             Console.WriteLine($"Planche:{Game.countPlanche}");
@@ -85,13 +85,13 @@ namespace TravailPratique
             Console.WriteLine($"Isolant:{Game.countIsolant}");
             Console.WriteLine($"Maison:{Game.countMaison}");
             Console.WriteLine("-----------------------");
-            Console.WriteLine("1. Feu: 2 Bois, 1 Silex");
-            Console.WriteLine("2. Hache: 1 Bois, 1 Fer");
-            Console.WriteLine("3. Vitre: 5 Sable, 1 Feu");
-            Console.WriteLine("4. Planche: 4 Bois, 1 Hache");
-            Console.WriteLine("5. Brique: 3 Argile, 1 Feu");
-            Console.WriteLine("6. Isolant: 3 Herbe");
-            Console.WriteLine("7. Maison: 4 Planche, 4 Brique, 4 Isolant, 2 Vitre");
+            Console.WriteLine("A. Feu: 2 Bois, 1 Silex");
+            Console.WriteLine("B. Hache: 1 Bois, 1 Fer");
+            Console.WriteLine("C. Vitre: 5 Sable, 1 Feu");
+            Console.WriteLine("D. Planche: 4 Bois, 1 Hache");
+            Console.WriteLine("E. Brique: 3 Argile, 1 Feu");
+            Console.WriteLine("F. Isolant: 3 Herbe");
+            Console.WriteLine("G. Maison: 4 Planche, 4 Brique, 4 Isolant, 2 Vitre");
             Console.WriteLine("Choisissez un objet à fabriquer (ou appuyez sur Entrée pour annuler):");
         }
         public static void DisplayGrid(int[,] grid, int posY, int posX)

@@ -94,6 +94,10 @@ namespace TravailPratique
                 View.DisplayMaterial();
                 ConsoleKeyInfo input = Console.ReadKey();
                 Game.Tools(input);
+                if (input.Key == ConsoleKey.Enter)
+                {
+                    GameController();
+                }
             }
         }
         public static void InitializeGame()
