@@ -245,7 +245,7 @@ namespace TravailPratique
 
         public static void Backupfile()
         {
-            string content = File.ReadAllText("backup.text");
+            string content = File.ReadAllLines("backup.text");
             string[] dividedContent = content.Split("\n");
             for (int i = 0; i < dividedContent.Length; i++)
             {
