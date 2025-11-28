@@ -245,12 +245,45 @@ namespace TravailPratique
 
         public static void Backupfile()
         {
-            string content = File.ReadAllLines("backup.text");
-            string[] dividedContent = content.Split("\n");
-            for (int i = 0; i < dividedContent.Length; i++)
+            string[] content = File.ReadAllLines("backup.text");
+            for (int i = 0; i < content.Length; i++)
             {
-                string[] text = dividedContent[i].Split(",");
+                string text = content[0];
+                string[] dividedText = text.Split(",");
+                for (int j = 0; j < dividedText.Length; j++)
+                {
+                    posY = Convert.ToInt32(dividedText[0]); 
+                    posX = Convert.ToInt32(dividedText[1]);
+                    countMarais = Convert.ToInt32(dividedText[2]);
+                    countPrairie = Convert.ToInt32(dividedText[3]);
+                    countRiviere = Convert.ToInt32(dividedText[4]);
+                    countMontagne = Convert.ToInt32(dividedText[5]);
+                    countForet = Convert.ToInt32(dividedText[6]);
+                    countDesert = Convert.ToInt32(dividedText[7]);
+                    countFeu = Convert.ToInt32(dividedText[8]);
+                    countBrique = Convert.ToInt32(dividedText[9]);
+                    countHache = Convert.ToInt32(dividedText[10]);
+                    countMaison = Convert.ToInt32(dividedText[11]);
+                    countIsolant = Convert.ToInt32(dividedText[12]);
+                    countPlanche = Convert.ToInt32(dividedText[13]);
+                    countVitre = Convert.ToInt32(dividedText[14]);
+                    countHiver = Convert.ToInt32(dividedText[15]);
+                }
+                for (int j = 1; j < content.Length; i++)
+                {
+                    int[,] grid = new int[10, 10];
+                    for (int y = 0; y < grid.GetLength(0); y++)
+                    {
+                        for (int x = 0; x < grid.GetLength(1); x++)
+                        {
+                            grid[y, x] = Convert.ToInt32(content[j]);
+                            File.AppendAllText("backup.text", $"{grid[y, x]},");
+                        }
+                        Console.Write(" ");
+                    }
+                }
             }
+
         }
     }
 }
