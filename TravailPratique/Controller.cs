@@ -29,6 +29,7 @@ namespace TravailPratique
                         GameController();
                         break;
                     case "2":
+                        Console.Clear();
                         Game.Backupfile();
                         GameController();
                         break;
