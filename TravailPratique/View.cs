@@ -221,7 +221,8 @@ namespace TravailPratique
                         "\r\n   ((_))  || |      (  _                       / /|\\ \\" +
                         "\r\n   (o o)  || |      ))(\"),                    | | | | |" +
                         "\r\n____\\_/___||_|_____((__^_))____________________\\_\\|/_/__";
-                default: return "Base \n  .-------------------.              ___" +
+                default:
+                    return "Base \n  .-------------------.              ___" +
                         "\r\n(   I had a crash!    )            /  /]" +
                         "\r\n `-------------.   ,-'            /  / ]" +
                         "\r\n                \\ |      _____,. '  /__]" +
@@ -285,7 +286,7 @@ namespace TravailPratique
         /// <summary>
         /// Affiche le message de fin du jeu.
         /// </summary>
-        public static void EndGame() 
+        public static void EndGame()
         {
             Console.WriteLine("███╗   ███╗███████╗██████╗  ██████╗██╗    ██████╗      █████╗ ██╗   ██╗ ██████╗ ██╗██████╗ " +
                         "\r\n████╗ ████║██╔════╝██╔══██╗██╔════╝██║    ██╔══██╗    ██╔══██╗██║   ██║██╔═══██╗██║██╔══██╗" +

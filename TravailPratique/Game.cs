@@ -281,7 +281,7 @@ namespace TravailPratique
         /// </summary>
         public static void Backup()
         {
-            int[] backupCounter = {posY,posX,countSwamp,countPrairie, countRiver, countMountain,countForest,countDesert,countFire,countBrick,countAxe,countHouse,countInsulating,countBoard,countWindowpane,countHiver};
+            int[] backupCounter = { posY, posX, countSwamp, countPrairie, countRiver, countMountain, countForest, countDesert, countFire, countBrick, countAxe, countHouse, countInsulating, countBoard, countWindowpane, countHiver };
             string counter = string.Join(",", backupCounter);
             File.WriteAllText("backup.text", $"{counter}\n");
             string[,] gridValues = new string[10, 10];
@@ -290,11 +290,11 @@ namespace TravailPratique
             {
                 for (int x = 0; x < grid.GetLength(1); x++)
                 {
-                    gridValues[y,x] = Convert.ToString(grid[y, x]);
+                    gridValues[y, x] = Convert.ToString(grid[y, x]);
                     File.AppendAllText("backup.text", $"{gridValues[y, x]},");
                 }
                 File.AppendAllText("backup.text", "\n");
-            }     
+            }
         }
 
         /// <summary>

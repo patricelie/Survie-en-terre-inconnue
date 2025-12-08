@@ -151,7 +151,7 @@ namespace TravailPratique
                 {
                     return;
                 }
-            } 
+            }
         }
     }
 }
