@@ -1,6 +1,6 @@
 # Jeu – Survie en Terre Inconnue
 
-**Contexte du projet**
+## Contexte du projet
 Projet académique réalisé dans le cadre d'un TP.
 Projet effectué en binôme.
 Conception et implémentation réalisé conjointement.
