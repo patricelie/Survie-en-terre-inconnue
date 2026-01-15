@@ -1,5 +1,5 @@
 # Jeu – Survie en Terre Inconnue
-
+![Aperçu du jeu](images/apercu-jeu.png)
 ## Contexte du projet
 Projet académique réalisé dans le cadre d'un TP.
 Projet effectué en binôme.
